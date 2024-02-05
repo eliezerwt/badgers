@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: Flask",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "flask",
+            "cwd": "${workspaceFolder}/src",
+            "env": {
+                "FLASK_APP": "main",
+                "FLASK_DEBUG": "1",
+                "DATABASE_URL": "sqlite:///${workspaceFolder}/sample.db"
+            },
+            "args": [
+                "run",
+                "--no-debugger",
+                "--no-reload",
+            ],
+            "jinja": true
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+badge
+- uuid
+- name
+- picture
+- description
+- campaign
+- start_date
+- end_date
+
+campaign
+- uuid
+- name
+- picture
+- description
+- start_date
+- end_date
+- creator
+
+user
+- uuid
+- email
+- username
+- picture
+- is_visible
+- is_admin
+
+user_badge
+- badge_uuid
+- user_uuid
+- award_date
+
+user_campaign
+- campaign_uuid
+- user_uuid
+- secret_key
+
